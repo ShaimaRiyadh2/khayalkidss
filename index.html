@@ -130,10 +130,12 @@ h1, h2, h5, p {
     box-shadow: 0 12px 25px rgba(0,0,0,0.3);
 }
 .story-card img {
-    height: 300px; /* تكبير الصور */
-    object-fit: cover;
-    width: 100%;
+    width: 100%;       /* full width of card */
+    height: auto;      /* keep original aspect ratio */
+    object-fit: contain; /* show entire image without cropping */
+    border-radius: 12px;
 }
+
 
 .story-card img:hover {
     transform: scale(1.05) rotate(2deg);
